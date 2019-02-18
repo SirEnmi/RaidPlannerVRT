@@ -1,0 +1,336 @@
+/* Lien Ecriture final fantasy */
+
+@font-face {
+    font-family: "Final Fantasy";
+    src: url("finalf.eot?") format("eot"), url("finalf.woff") format("woff"), url("finalf.ttf") format("truetype"), url("finalf.svg#New") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Général */
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background: url("../img/what-the-hex.png");
+    background-repeat: repeat;
+    background-position: bottom left;
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+}
+
+ul{
+    padding-left: 0rem;
+}
+
+.jobInscrit{
+    width:3rem;
+}
+
+.bg-inscrit{
+    padding: .5rem !important;
+}
+
+.card-header {
+    padding: .5rem;
+}
+
+.card {
+    box-shadow: 8px 6px 20px 1px #4d6384;
+}
+
+
+/*Jumbotron*/
+
+.jumbotron {
+    border-radius: 0px;
+
+    margin-bottom: 0;
+    background: url("../img/ffxiv5.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.display-4 {
+    color: aliceblue;
+    font-family: "Final Fantasy";
+    text-transform: uppercase;
+    padding-top: 2%;
+}
+
+.lead {
+    color: aliceblue;
+}
+
+#titreJumbo {
+    margin-left: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    /*    font-size: 1.2em;*/
+    padding: 0.2em;
+}
+
+.nav-link {
+    color: aliceblue !important;
+}
+
+.nav-link:hover {
+    color: #d7191b !important;
+}
+
+/* Accueil */ 
+
+.titreAccueil{
+    
+    font-family: "Final Fantasy";
+    font-size: 2em;
+    color: #343a40;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: aliceblue;
+    padding: 0.5rem;
+    margin-top: 3rem;
+}
+
+.roller {
+
+    width: 80px;
+    animation-name: anim;
+    animation: anim infinite;
+    animation-duration: 15s;
+    position: relative;
+}
+
+@keyframes anim {
+    0% {
+        left: -100px;
+        top: 0px;
+    }
+    100% {
+        left: 100%;
+        top: 0px;
+    }
+}
+
+/* Page Admin */
+
+#tableauAdmin {
+
+    color: aliceblue;
+}
+
+/*Gear Pannel*/
+
+a {
+    color: ghostwhite;
+}
+
+.avatar {
+    max-height: 64px;
+}
+
+.img-thumbnail {
+    padding: .15rem;
+}
+
+.info {
+    padding: 0rem .5rem;
+}
+
+.card-header[id^="header"] {
+    cursor: pointer;
+}
+
+.xivdb-ii {
+    height: 40px !important;
+    margin: 0px !important;
+    margin-right: 1rem !important;
+}
+
+.rarity-rare-darken {
+    vertical-align: 50% !important;
+}
+
+.rarity-rare-darken:hover {
+    color: ghostwhite !important;
+    font-weight: bold !important;
+}
+
+.valign {
+    vertical-align: 50% !important;
+}
+
+hr {
+    margin-bottom: .75rem;
+    margin-top: .75rem;
+}
+
+.btnMenu {
+    position: fixed;
+    bottom: 30%;
+    right: 3%;
+}
+
+.btnGP {
+    cursor: pointer;
+    width: 40px;
+}
+
+.slot {
+    position: absolute;
+    right: 0;
+}
+
+.slot-active {
+    cursor: pointer;
+}
+
+/*Page login*/
+
+.log {
+
+    margin: 0;
+    padding: 0;
+    background: url(../img/ffxiv2.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    /* pour anciens Chrome et Safari */
+    background-size: cover;
+    /* version standardisée */
+}
+
+div.centre {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: -100px;
+    /* Cette valeur doit être la moitié négative de la valeur du height */
+}
+
+#lien {
+    color: #bc384b;
+}
+
+#lien:hover {
+    color: #FFE4E4;
+
+}
+
+
+/*Bouton login*/
+
+.butlog {
+    border: none;
+    background: #343a40;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+/*
+
+.butlog:after {
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    background: #343a40;
+    border-radius: 10px;
+    content: 'En avant!';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.butlog:hover {
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+}
+*/
+
+/*Bouton register*/
+
+.butreg {
+    border: none;
+    background: #343a40;
+    color: white;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    transform-style: preserve-3d;
+    cursor:pointer;
+}
+
+/*
+.butreg:after {
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    background: #343a40;
+    border-radius: 10px;
+    content: 'Sur de toi?';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.butreg:hover {
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+}
+*/
+
+/*Centrer les formulaires  log/reg au milieu de la page*/
+
+#bloc {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.butedit {
+    /*    height: 10%;*/
+    border: none;
+    background: #343a40;
+    color: white;
+    padding: 0px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}
+
+.butedit:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #343a40;
+    box-shadow: inset 0 0 0 3px #343a40;
+}
