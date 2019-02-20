@@ -5000,7 +5000,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: aliceblue;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -5010,6 +5010,7 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
+    pointer-events: none;
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,

@@ -211,7 +211,7 @@
                             </select>
                         </p>
                         <p class="card-text">
-                            <label for="nom_raid">Message :</label>
+                            <label for="message">Message :</label>
                             <textarea class="form-control" name="message" type="text" id="message" rows="5"></textarea>
                         </p>
                         <p class="card-text">

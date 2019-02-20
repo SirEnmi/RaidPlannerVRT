@@ -6,15 +6,18 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-laravel" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="\accueil">
-        <img src="ressources/img/VRTLogo.png" style="height: 39px;" />
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+
+    <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="navbar-brand" href="\accueil">
+                    <img src="ressources/img/VRTLogo.png" style="height: 29px;" />
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="accueil.php">Accueil</a>
             </li>
@@ -22,14 +25,16 @@
                 <a class="nav-link" href="raidplanner.php">Raid Planner</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="gearpannel.php">Gear Pannel</a>
+                <a class="nav-link disabled" href="gearpannel.php">Gear Pannel</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="webagencyfail.php">Devotion Doctrine</a>
+                <a class="nav-link disabled" href="webagencyfail.php">Devotion Doctrine</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="blogs.php">Rapports</a>
             </li>
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item">
                 <a class="nav-link" href="profil.php">Profil</a>
             </li>
@@ -61,8 +66,7 @@
                     <?= $_SESSION['name'] ?> <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item text-center" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                    <a class="dropdown-item text-center" href="logout.php">
                         Déconnexion
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
