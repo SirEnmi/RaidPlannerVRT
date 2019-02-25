@@ -14,9 +14,9 @@
     <div class="collapse navbar-collapse container" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="navbar-brand" href="\accueil">
+                <div class="navbar-brand">
                     <img src="ressources/img/VRTLogo.png" style="height: 29px;" />
-                </a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="accueil.php">Accueil</a>
@@ -35,9 +35,9 @@
             </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="profil.php">Profil</a>
-            </li>
+            </li>-->
             <?php
                 if(($_SESSION['role'] == '1')) 
                 { 
@@ -66,12 +66,13 @@
                     <?= $_SESSION['name'] ?> <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item text-center" href="logout.php">
+                    <a class="dropdown-item" href="profil.php">Profil</a>
+                    <a class="dropdown-item" href="logout.php">
                         Déconnexion
                     </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    <!--<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
-                    </form>
+                    </form>-->
                 </div>
             </li>
         </ul>

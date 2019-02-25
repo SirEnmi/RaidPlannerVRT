@@ -7,23 +7,26 @@
     
     /* FETCH GHRIST*/
     //requete
-    $rqVerif ="SELECT titre, texte, id_user FROM web_agency_fails";
+    $rqWafs = "SELECT titre, texte, id_user FROM web_agency_fails";
     //preparation
-    $stmtVerif = $dbh->prepare($rqVerif);
+    $stmtWafs = $dbh->prepare($rqWafs);
     //exectuion
-    $stmtVerif->execute();
+    $stmtWafs->execute();
     //recup données
-    $wafs = $stmtVerif->fetchAll();
+    $wafs = $stmtWafs->fetchAll();
 
     /* FETCH RAPPORTS */
     //requete
-    $rqVerif2 ="SELECT lien_video, lien_FFlogs, commentaire FROM blogs";
+    $rqRapp = "SELECT b.lien_video, b.lien_FFlogs, b.id_event, b.commentaire, e.nom_raid
+                FROM blogs as b
+                JOIN events as e
+                WHERE b.id_event = e.id";
     //preparation
-    $stmtVerif2 = $dbh->prepare($rqVerif2);
-    //exectuion
-    $stmtVerif2->execute();
+    $stmtRapp = $dbh->prepare($rqRapp);
+    //execution
+    $stmtRapp->execute();
     //recup données
-    $rapports = $stmtVerif2->fetchAll();
+    $Rapports = $stmtRapp->fetchAll();
 ?>
 
 <div class="row">
@@ -49,19 +52,19 @@
     <div class="col-md-5">
         <h4 class="titreAccueil">DERNIERS RAPPORTS</h4>
         <?php
-            if(isset($rapports)){
-                foreach($rapports as $rapport) :     
+            if(isset($Rapports)){
+                foreach($Rapports as $Rapport) :     
         ?>
         <div class="card text-white bg-dark" style="margin:1rem;">
             <div class="card-header">
-                <h5>{{$blog->nom_raid}}</h5>
+                <h5><?= $Rapport['nom_raid']; ?></h5>
             </div>
             <div class="card-body">
-                <h5>Lien youtube : </h5><a href="{{$blog->lien_video}}" target="blank"><?= $rapport['lien_video'] ?></a><br /><br />
-                <h5>Lien FFlogs : </h5><a href="{{$blog->lien_FFlogs}}" target="blank"><?= $rapport['lien_FFlogs'] ?></a><br />
-                <hr />
+                <h5>Lien youtube : </h5><a href="<?= $Rapport['lien_video']; ?>" target="blank"><?= $Rapport['lien_video']; ?></a><br/><br/>
+                <h5>Lien FFlogs : </h5><a href="<?= $Rapport['lien_FFlogs']; ?>" target="blank"><?= $Rapport['lien_FFlogs']; ?></a><br/>
+                <hr/>
                 <h5>Commentaire :</h5>
-                <p class="card-text"><?= $rapport['commentaire'] ?></p>
+                <p class="card-text"><?= $Rapport['commentaire']; ?></p>
             </div>
         </div>
         <?php

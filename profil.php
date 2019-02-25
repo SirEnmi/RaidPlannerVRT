@@ -1,4 +1,11 @@
-@extends ('layouts/app') @section('titre') VRT - Profil @endsection @section('content')
+<?php
+    $titre = "VRT - Mon profil";
+	//connexion BDD
+	include "ressources/includes/connexion.php";
+    include 'ressources/includes/header.php';
+    include 'ressources/includes/navbar.php';
+?>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -76,4 +83,7 @@
             </div>
         </div>
     </div>
-    @endsection
+</div>
+<?php
+    include 'ressources/includes/footer.php';
+?>
