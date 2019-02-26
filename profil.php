@@ -23,7 +23,6 @@
         $('option').each(function () {
             if ($(this).attr("value") == job){
                 $(this).attr("selected","selected");
-                console.log('salut');
             }
         });
     });
@@ -74,36 +73,39 @@
                         <div class="form-group row">
                             <label for="job" class="col-md-4 col-form-label text-md-right" style="color: whitesmoke">Job</label>
                             <div class="col-md-6">
-                                <select class="form-control" name="job" id="job">
+                                <select id="job" name="job" class="form-control" required>
                                     <optgroup label="Tanks">
-                                        <option value="PLD">Paladin</option>
-                                        <option value="WAR">Guerrier</option>
-                                        <option value="DRK">Chevalier Noir</option>
+                                        <option value="19">Paladin</option>
+                                        <option value="21">Guerrier</option>
+                                        <option value="32">Chevalier Noir</option>
                                     </optgroup>
                                     <optgroup label="Healers">
-                                        <option value="WHM">Mage Blanc</option>
-                                        <option value="AST">Astromancien</option>
-                                        <option value="SCH">Erudit</option>
+                                        <option value="24">Mage blanc</option>
+                                        <option value="33">Astromancien</option>
+                                        <option value="28">Erudit</option>
                                     </optgroup>
                                     <optgroup label="DPS - Melee">
-                                        <option value="DRG">Dragoon</option>
-                                        <option value="NIN">Ninja</option>
-                                        <option value="MNK">Moine</option>
-                                        <option value="SAM">Samouraï</option>
+                                        <option value="34">Samouraï</option>
+                                        <option value="20">Moine</option>
+                                        <option value="22">Dragoon</option>
+                                        <option value="30">Ninja</option>
                                     </optgroup>
                                     <optgroup label="DPS - Distance">
-                                        <option value="BRD">Bard</option>
-                                        <option value="MCH">Machiniste</option>
-                                        <option value="BLM">Mage Noir</option>
-                                        <option value="RDM">Mage Rouge</option>
-                                        <option value="SMN">Invocateur</option>
+                                        <option value="23">Barde</option>
+                                        <option value="31">Machiniste</option>
+                                    </optgroup>
+                                    <optgroup label="DPS - Magique">
+                                        <option value="25">Mage Noir</option>
+                                        <option value="27">Invocateur</option>
+                                        <option value="35">Mage Rouge</option>
                                     </optgroup>
                                 </select>
                             </div>
                         </div>
+                        <hr/>
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-white">
+                                <button type="submit" class="btn btn-dark">
                                     Enregistrer
                                 </button>
                             </div>
@@ -111,6 +113,22 @@
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <div class="row justify-content-center">
+        <div class="col-centered">
+            <form method="POST" action="updatePerso.php">
+                <input id="id_lodestone" type="hidden" class="form-control" name="id_lodestone" value="<?= $Perso['id_lodestone'] ?>">
+                <input id="job" type="hidden" class="form-control" name="job" value="<?= $Perso['job'] ?>">
+                <button type="submit" class="btn btn-success center-block">
+                    <b>Mettre à jour les informations de mon personnage</b>
+                </button>
+            </form>
         </div>
     </div>
 </div>

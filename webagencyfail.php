@@ -55,7 +55,7 @@
                         <p class="card-text">
                             <label for="texte">Texte :</label>
                             <textarea class="form-control" name="texte" type="text" id="texte" rows="5"></textarea>
-                            <input class="form-control" type="hidden" name="id_user" id="id_user" value="<?= $_SESSION['id']; ?>"
+                            <input class="form-control" type="hidden" name="id_user" id="id_user" value="<?= $_SESSION['id']; ?>">
                         </p>
                         <hr />
                         <div class="text-center">

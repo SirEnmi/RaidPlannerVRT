@@ -4,7 +4,7 @@ $(document).ready(function () {
         var job = $(this).attr('name');
 
         function getCharData(idChar) {
-            var urlChar = 'https://xivapi.com/character/' + idChar;
+            var urlChar = 'https://xivdb.com/character/' + idChar;
             console.log(urlChar);
             $.get(urlChar, function (dataC) {
                 $('#avatar' + idChar).html('<img class="img-responsive img-thumbnail avatar" src="' + dataC.Character.Avatar + '" alt="' + dataC.Character.Name + '">');

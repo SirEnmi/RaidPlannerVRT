@@ -1,0 +1,15 @@
+19 = PLD
+20 = MNK
+21 = WAR
+22 = DRG
+23 = BRD
+24 = WHM
+25 = BLM
+27 = SMN
+28 = SCH
+30 = NIN
+31 = MCH
+32 = DRK
+33 = AST
+34 = SAM
+35 = RDM

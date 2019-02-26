@@ -59,29 +59,29 @@
                             <div class="col-md-6">
                                 <select id="job" name="job" class="form-control" required>
                                     <optgroup label="Tanks">
-                                        <option value="PLD">Paladin</option>
-                                        <option value="WAR">Guerrier</option>
-                                        <option value="DRK">Chevalier Noir</option>
+                                        <option value="19">Paladin</option>
+                                        <option value="21">Guerrier</option>
+                                        <option value="32">Chevalier Noir</option>
                                     </optgroup>
                                     <optgroup label="Healers">
-                                        <option value="WHM">Mage blanc</option>
-                                        <option value="AST">Astromancien</option>
-                                        <option value="SCH">Erudit</option>
+                                        <option value="24">Mage blanc</option>
+                                        <option value="33">Astromancien</option>
+                                        <option value="28">Erudit</option>
                                     </optgroup>
                                     <optgroup label="DPS - Melee">
-                                        <option value="SAM">Samouraï</option>
-                                        <option value="MNK">Moine</option>
-                                        <option value="DRG">Dragoon</option>
-                                        <option value="NIN">Ninja</option>
+                                        <option value="34">Samouraï</option>
+                                        <option value="20">Moine</option>
+                                        <option value="22">Dragoon</option>
+                                        <option value="30">Ninja</option>
                                     </optgroup>
                                     <optgroup label="DPS - Distance">
-                                        <option value="BRD">Barde</option>
-                                        <option value="MCH">Machiniste</option>
+                                        <option value="23">Barde</option>
+                                        <option value="31">Machiniste</option>
                                     </optgroup>
                                     <optgroup label="DPS - Magique">
-                                        <option value="BLM">Mage Noir</option>
-                                        <option value="SMN">Invocateur</option>
-                                        <option value="RDM">Mage Rouge</option>
+                                        <option value="25">Mage Noir</option>
+                                        <option value="27">Invocateur</option>
+                                        <option value="35">Mage Rouge</option>
                                     </optgroup>
                                 </select>
                             </div>

@@ -25,7 +25,7 @@
                 <a class="nav-link" href="raidplanner.php">Raid Planner</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="gearpannel.php">Gear Pannel</a>
+                <a class="nav-link" href="gearpannel.php">Gear Pannel</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="webagencyfail.php">Devotion Doctrine</a>
