@@ -1,5 +1,5 @@
 <?php
-	include 'ressources/includes/connexion.php';
+	include '../ressources/includes/connexion.php';
 
 	//Mr Propre
 	$safe = array_map('strip_tags', $_POST);
@@ -11,5 +11,5 @@
     //execution
     $stmtInscrip->execute($params);
 
-    header("Location: raidplanner/raid.php?id=$safe->id_event");
+    header("Location: ../raidplanner/raid.php?id=$safe->id_event");
 ?>

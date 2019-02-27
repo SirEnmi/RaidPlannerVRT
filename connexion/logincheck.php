@@ -4,7 +4,7 @@
 
 	//mr propre
 	$safe = array_map('strip_tags', $_POST);
-    include 'ressources/includes/connexion.php';
+    include '../ressources/includes/connexion.php';
     //requete
     $rqVerif ="SELECT id, name, email, password, role FROM users WHERE email = :email";
     //preparation
@@ -28,13 +28,13 @@
             $_SESSION['auth'] = 'ok'; //pour le menu
             $_SESSION['role'] = $user['role'];
             //redirection accueil
-            header("Location: accueil.php"); 
+            header("Location: ../accueil"); 
             exit();
         }
         else $error = "1";
     }
     else $error = "2";
 
-    header("Location: login.php?err=$error");
+    header("Location: index.php?err=$error");
     exit();
 ?>

@@ -1,9 +1,9 @@
 <?php
     $titre = "VRT - Gear Pannel";
 	//connexion BDD
-	include "ressources/includes/connexion.php";
-    include 'ressources/includes/header.php';
-    include 'ressources/includes/navbar.php';
+	include "../ressources/includes/connexion.php";
+    include '../ressources/includes/header.php';
+    include '../ressources/includes/navbar.php';
 
     $rqPersonnages = "SELECT * FROM personnages";
     //preparation
@@ -31,7 +31,7 @@
     $Slots = $stmtSlots->fetchAll();
 ?>
 
-<script src="ressources/js/gearPannel.js"></script>
+<script src="../ressources/js/gearPannel.js"></script>
 
 
     <?php
@@ -78,7 +78,7 @@
                                 <div class="col-md-5">
                                     <div id="slot_<?= $Slot['libelle']; ?><?= $Personnage['id_lodestone']; ?>"></div>
                                 </div>
-                                <div class="col-md-2 text-center"><img src="ressources/img/GearIcons/<?= $Slot['libelle']; ?>.png" /></div>
+                                <div class="col-md-2 text-center"><img src="../ressources/img/GearIcons/<?= $Slot['libelle']; ?>.png" /></div>
                                 <div class="col-md-5 row">
                                         <?php
                                             if($_SESSION['id'] == $Personnage['id_user']){
@@ -91,10 +91,10 @@
                                                         }
                                                     }
                                                 ?>
-                                                </select><img src="ressources/img/GearIcons/slot.png" class="slot slot-active" />
+                                                </select><img src="../ressources/img/GearIcons/slot.png" class="slot slot-active" />
                                         <?php
                                             }
-                                            else echo '<img src="ressources/img/GearIcons/slot.png" class="slot" />';
+                                            else echo '<img src="../ressources/img/GearIcons/slot.png" class="slot" />';
                                         ?>
                                 </div>
                             </div>
@@ -118,5 +118,5 @@
     </div>
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

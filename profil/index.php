@@ -1,9 +1,9 @@
 <?php
     $titre = "VRT - Mon profil";
 	//connexion BDD
-	include "ressources/includes/connexion.php";
-    include 'ressources/includes/header.php';
-    include 'ressources/includes/navbar.php';
+	include "../ressources/includes/connexion.php";
+    include '../ressources/includes/header.php';
+    include '../ressources/includes/navbar.php';
 
     $rqPerso = "SELECT id_lodestone, job FROM personnages WHERE id_user = :id_user";
     //preparation
@@ -134,5 +134,5 @@
 </div>
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

@@ -1,8 +1,8 @@
 <?php
     $titre = "VRT - S'enregistrer";
 	//connexion BDD
-	include "ressources/includes/connexion.php";
-    include 'ressources/includes/header.php';
+	include "../ressources/includes/connexion.php";
+    include '../ressources/includes/header.php';
 ?>
 
 <div class="container" id="bloc">
@@ -100,7 +100,7 @@
                                 <button type="submit" class="btn btn-dark">
                                     S'enregistrer
                                 </button>
-                                <a class="btn btn-link" id="lien" href="login.php">
+                                <a class="btn btn-link" id="lien" href="../login">
                                     Se connecter
                                 </a>
                             </div>
@@ -113,5 +113,5 @@
 </div>
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

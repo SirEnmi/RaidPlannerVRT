@@ -15,23 +15,23 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <div class="navbar-brand">
-                    <img src="ressources/img/VRTLogo.png" style="height: 29px;" />
+                    <img src="../ressources/img/VRTLogo.png" style="height: 29px;" />
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="accueil.php">Accueil</a>
+                <a class="nav-link" href="../accueil">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="raidplanner.php">Raid Planner</a>
+                <a class="nav-link" href="../raidplanner">Raid Planner</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="gearpannel.php">Gear Pannel</a>
+                <a class="nav-link" href="../gearpannel">Gear Pannel</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="webagencyfail.php">Devotion Doctrine</a>
+                <a class="nav-link disabled" href="../bible">Devotion Doctrine</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="blogs.php">Rapports</a>
+                <a class="nav-link" href="../rapports">Rapports</a>
             </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
@@ -66,8 +66,8 @@
                     <?= $_SESSION['name'] ?> <span class="caret"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="profil.php">Profil</a>
-                    <a class="dropdown-item" href="logout.php">
+                    <a class="dropdown-item" href="../profil">Profil</a>
+                    <a class="dropdown-item" href="../logout.php">
                         Déconnexion
                     </a>
                     <!--<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

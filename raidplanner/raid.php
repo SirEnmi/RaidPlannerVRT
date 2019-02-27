@@ -1,11 +1,11 @@
 <?php
 	//connexion BDD
-	include "ressources/includes/connexion.php";
+	include "../ressources/includes/connexion.php";
 
     $raid_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
     
     if($raid_id == 0){
-        header("Location: raidplanner.php");
+        header("Location: ../raidplanner");
     }
     else
 
@@ -28,8 +28,8 @@
     $Inscriptions = $stmtInscription->fetchAll(PDO::FETCH_OBJ);
 
     $titre = "VRT - " . $Raid->nom_raid;
-    include 'ressources/includes/header.php';
-    include 'ressources/includes/navbar.php';
+    include '../ressources/includes/header.php';
+    include '../ressources/includes/navbar.php';
     $now = date('Y-m-d');
 ?>
 <div class="container-fluid">
@@ -63,7 +63,7 @@
                                         foreach($Inscriptions as $Inscription){
                                             if($Inscription->job === '22' || $Inscription->job === '20' || $Inscription->job === '34' || $Inscription->job === '30' ):
                                 ?>
-                                <li><img class="jobInscrit" src="./ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
+                                <li><img class="jobInscrit" src="../ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
                                     <?= $Inscription->name ?>
                                 </li>
                                 <hr />
@@ -89,7 +89,7 @@
                                         foreach($Inscriptions as $Inscription){
                                             if($Inscription->job === '23' || $Inscription->job === '31' || $Inscription->job === '25' || $Inscription->job === '27' || $Inscription->job === '35' ):
                                 ?>
-                                <li><img class="jobInscrit" src="./ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
+                                <li><img class="jobInscrit" src="../ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
                                     <?= $Inscription->name ?>
                                 </li>
                                 <hr />
@@ -115,7 +115,7 @@
                                         foreach($Inscriptions as $Inscription){
                                             if($Inscription->job === '33' || $Inscription->job === '24' || $Inscription->job === '28'):
                                 ?>
-                                <li><img class="jobInscrit" src="./ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
+                                <li><img class="jobInscrit" src="../ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
                                     <?= $Inscription->name ?>
                                 </li>
                                 <hr />
@@ -141,7 +141,7 @@
                                         foreach($Inscriptions as $Inscription){
                                             if($Inscription->job === '19' || $Inscription->job === '32' || $Inscription->job === '21'):
                                 ?>
-                                <li><img class="jobInscrit" src="./ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
+                                <li><img class="jobInscrit" src="../ressources/img/JobIcons/<?= $Inscription->job; ?>.png" />
                                     <?= $Inscription->name ?>
                                 </li>
                                 <hr />
@@ -234,5 +234,5 @@
 </div>
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

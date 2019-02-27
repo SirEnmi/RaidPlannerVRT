@@ -1,9 +1,9 @@
 <?php
     $titre = "VRT - Calendrier";
 	//connexion BDD
-	include "ressources/includes/connexion.php";
-    include 'ressources/includes/header.php';
-    include 'ressources/includes/navbar.php';
+	include "../ressources/includes/connexion.php";
+    include '../ressources/includes/header.php';
+    include '../ressources/includes/navbar.php';
 ?>
 
 <div class="container">
@@ -47,5 +47,5 @@
 </div>
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

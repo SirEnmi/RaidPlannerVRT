@@ -11,5 +11,5 @@
     //execution
     $stmtAjout->execute($params);
 
-    header("Location: webagencyfail.php");
+    header("Location: index.php");
 ?>

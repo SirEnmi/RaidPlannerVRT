@@ -1,6 +1,6 @@
 <?php
-	include 'ressources/includes/connexion.php';
-	include 'ressources/includes/toolbox.php';
+	include '../ressources/includes/connexion.php';
+	include '../ressources/includes/toolbox.php';
 
 	//Mr Propre
 	$safe = array_map('strip_tags', $_POST);

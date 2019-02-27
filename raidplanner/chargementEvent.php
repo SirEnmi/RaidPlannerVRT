@@ -1,6 +1,6 @@
 <?php
 
-	include 'ressources/includes/connexion.php';
+	include '../ressources/includes/connexion.php';
 
 	$rqEvent = "SELECT id, nom_raid, start_date, end_date
                 FROM events";

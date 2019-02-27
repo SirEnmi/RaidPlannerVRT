@@ -1,9 +1,9 @@
 <?php
     $titre = "VRT - Devotion Doctrine";
 	//connexion BDD
-	include "ressources/includes/connexion.php";
-    include 'ressources/includes/header.php';
-    include 'ressources/includes/navbar.php';
+	include "../ressources/includes/connexion.php";
+    include '../ressources/includes/header.php';
+    include '../ressources/includes/navbar.php';
 
 	$rqWafs = "SELECT titre, texte, id_user FROM web_agency_fails";
     //preparation
@@ -70,5 +70,5 @@
 
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

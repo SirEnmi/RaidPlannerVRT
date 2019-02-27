@@ -1,8 +1,8 @@
 <?php
     $titre = "VRT - Connexion";
 	//connexion BDD
-	include "ressources/includes/connexion.php";
-    include 'ressources/includes/header.php';
+	include "../ressources/includes/connexion.php";
+    include '../ressources/includes/header.php';
 ?>
 
 <div class="container" id="bloc">
@@ -76,8 +76,8 @@
                                     Mot de passe oublié?
                                 </a>
 
-                                <a class="btn btn-link" id="lien" href="register.php">
-                                    S'enregistrer
+                                <a class="btn btn-link" id="lien" href="../inscription">
+                                    S'inscrire
                                 </a>
                             </div>
                         </div>
@@ -89,5 +89,5 @@
 </div>
 
 <?php
-    include 'ressources/includes/footer.php';
+    include '../ressources/includes/footer.php';
 ?>

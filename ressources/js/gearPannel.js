@@ -4,7 +4,7 @@ $(document).ready(function () {
         var job = $(this).attr('name');
 
         function getCharData(idChar) {
-            var urlChar = idChar + '.json';
+            var urlChar = '../ressources/personnages/' + idChar + '.json';
             console.log(urlChar);
             $.get(urlChar, function (dataC) {
                 $('#avatar' + idChar).html('<img class="img-responsive img-thumbnail avatar" src="' + dataC.Character.Avatar + '" alt="' + dataC.Character.Name + '">');
@@ -15,10 +15,10 @@ $(document).ready(function () {
         getCharData(idChar);
 
         function getGearData(idChar) {
-            var urlGear = idChar + '.json';
+            var urlGear = '../ressources/personnages/' + idChar + '.json';
             $.get(urlGear, function (dataG) {
 
-                $('#class' + idChar).html('<img class="img-responsive" src="./ressources/img/JobIcons/' + dataG.Character.ActiveClassJob.JobID + '.png">');
+                $('#class' + idChar).html('<img class="img-responsive" src="../ressources/img/JobIcons/' + dataG.Character.ActiveClassJob.JobID + '.png">');
 /*                $('#ilvl' + idChar).text('ilvl : ' + dataG.Character.GearSet.Gear.item_level_avg);*/
 
                 $('#slot_mainhand' + idChar).html('<a href="http://xivapi.com/item/' + dataG.Character.GearSet.Gear.MainHand.ID + '"></a><br>');

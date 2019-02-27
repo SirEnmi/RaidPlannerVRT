@@ -1,6 +1,6 @@
 <?php
     //Connexion BDD
-    include 'ressources/includes/connexion.php';
+    include '../ressources/includes/connexion.php';
 
     //Recuperation infos profil
 	$données = array_map('strip_tags', $_POST);
@@ -11,7 +11,7 @@
     $Obj = json_decode($json);
 
     if($données['job'] == $Obj->Character->ActiveClassJob->JobID){
-        $fp = fopen($données['id_lodestone'] . '.json', 'w');
+        $fp = fopen('../ressources/personnages/' . $données['id_lodestone'] . '.json', 'w');
         
         fwrite($fp, $json);
         fclose($fp);
