@@ -12,5 +12,5 @@ Actuellement, la majeure partie de l'effort est consacré à convertir tout les 
 
 # Le cas de la page 'GearPannel' et les APIs FFXIV
 
-Malheureusement, le site https://xivdb.com/ a fermé recemment, emportant l'API que nous utilisions pour la page 'GearPannel'. Cette page est donc actuellement en stand-by jusqu'à trouver une autre solution (le site https://xivapi.com/ ne fournissant pas toutes les données que nous utilisions).
+Malheureusement, le site https://xivdb.com/ a fermé recemment, emportant l'API que nous utilisions pour la page 'GearPannel'. Cette page est donc actuellement en stand-by jusqu'à trouver une autre solution (nous utilisons désormais https://xivapi.com/ ).
 N'hésitez pas à tout de même jeter un oeil sur le code de la page et son script associé.
